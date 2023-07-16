@@ -1,11 +1,12 @@
-import './App.css';
+import { QueryClient, QueryClientProvider } from 'react-query';
+import UserList from './pages/UserList';
 
+const queryClient = new QueryClient()
 function App() {
   return (
-    <div >
-
-
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <UserList />
+    </QueryClientProvider>
   );
 }
 
