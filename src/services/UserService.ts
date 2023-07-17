@@ -6,7 +6,7 @@ interface Axios<T> {
     data: T
 }
 
-class UserService {
+export class UserService {
 
     async getUsers() {
         return endpoint.get<IUser[]>("https://jsonplaceholder.typicode.com/users")

@@ -25,6 +25,14 @@ npm start
 ```
 This will start the application and you can view it at http://localhost:3000 in your web browser.
 
+## Running the Tests
+To run the tests for the application, you can use the test script provided in the package.json file. Run the following command:
+```
+npm test
+```
+
+`This will start Jest and run all the tests in the __tests__ directory.`
+
 ## How to Use
 When you first load the application, you will see a table filled with user data. You can sort the data by clicking on the table headers. Clicking a header once will sort the data in ascending order, and clicking it again will sort the data in descending order.
 

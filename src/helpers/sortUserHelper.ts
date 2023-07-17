@@ -1,6 +1,6 @@
 import { Address, Company, IUser } from "../services/types";
 
-export const sortUsers = (users: IUser[] = [], sortField: keyof IUser, sortDirection: 'asc' | 'desc', filterKey: keyof IUser, filterStr: string): IUser[] => {
+export const sortUserHelper = (users: IUser[] = [], sortField: keyof IUser, sortDirection: 'asc' | 'desc', filterKey: keyof IUser, filterStr: string): IUser[] => {
     // First, filter the users.
     const filteredUsers = users.filter(user => {
         let userFieldValue: string | number | Address | Company | undefined = user[filterKey];
